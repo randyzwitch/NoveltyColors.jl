@@ -43,13 +43,13 @@ To submit a contribution, submit a pull request where the data file has the same
 
 |Number of Colors | Name  | Colors|
 |---|---|---|
-|4|4a!|[](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/4/4a.png)|
+|4|4a|![](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/4/4a.png)|
 |4|4b|![](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/4/4b.png)|
-|5|5a!|[](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5a.png)|
+|5|5a|![](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5a.png)|
 |5|5b|![](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5b.png)|
-|5|5c!|[](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5c.png)|
+|5|5c|![](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5c.png)|
 |5|5d|![](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5d.png)|
-|5|5e!|[](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5e.png)|
+|5|5e|![](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5e.png)|
 |5|5f|![](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5f.png)|
-|5|5g!|[](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5g.png)|
+|5|5g|![](https://github.com/randyzwitch/NoveltyColors.jl/blob/master/images/beyonce/5/5g.png)|
 
