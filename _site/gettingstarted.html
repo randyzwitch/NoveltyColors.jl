@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>NoveltyColors.jl: A Julia package for fun or non-standard color palettes</title>
+
+    <link rel="stylesheet" href="stylesheets/minimal_styles.css">
+    <link rel="stylesheet" href="stylesheets/minimal_pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://vega.github.io/vega-editor/vendor/d3.min.js"></script>
+    <script src="http://vega.github.io/vega/vega.min.js"></script>
+
+         <script type="text/javascript">
+// parse a spec and create a visualization view
+function parse(divid,spec) {
+  vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+}
+</script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="http://randyzwitch.github.io/NoveltyColors.jl"><h1>NoveltyColors.jl</h1></a>
+        <p>A Julia package for fun or non-standard color palettes</p>
+
+        <p>
+          <small><a href='gettingstarted.html'>Getting Started</a></small>
+          <br/>
+          <h4>Palettes</h3>
+          <small><a href='wesanderson4.html'>Wes Anderson - 4 Colors</a></small><br/>
+          <small><a href='wesanderson5.html'>Wes Anderson - 5 Colors</a></small><br/>
+          <small><a href='wesanderson7.html'>Wes Anderson - 7 Colors</a></small><br/>
+          <small><a href='beyonce4.html'>Beyonce - 4 Colors</a></small><br/>
+          <small><a href='beyonce5.html'>Beyonce - 5 Colors</a></small><br/>
+          <small><a href='beyonce6.html'>Beyonce - 6 Colors</a></small><br/>
+          <small><a href='beyonce7.html'>Beyonce - 7 Colors</a></small><br/>
+          <small><a href='beyonce8.html'>Beyonce - 8 Colors</a></small><br/>
+          <small><a href='beyonce9.html'>Beyonce - 9 Colors</a></small><br/>
+          <small><a href='beyonce10.html'>Beyonce - 10 Colors</a></small><br/>
+          <small><a href='beyonce11.html'>Beyonce - 11 Colors</a></small><br/>
+          <small><a href='beyonce12.html'>Beyonce - 12 Colors</a></small><br/>
+          <small><a href='beyonce13.html'>Beyonce - 13 Colors</a></small><br/>
+          <small><a href='beyonce14.html'>Beyonce - 14 Colors</a></small><br/>
+          <small><a href='beyonce15.html'>Beyonce - 15 Colors</a></small><br/>
+          <small><a href='beyonce16.html'>Beyonce - 16 Colors</a></small><br/>
+          <small><a href='beyonce17.html'>Beyonce - 17 Colors</a></small><br/>
+          <small><a href='beyonce18.html'>Beyonce - 18 Colors</a></small><br/>
+          <small><a href='beyonce19.html'>Beyonce - 19 Colors</a></small><br/>
+          <small><a href='beyonce20.html'>Beyonce - 20 Colors</a></small><br/>
+          <small><a href='beyonce21.html'>Beyonce - 21 Colors</a></small><br/>
+          <small><a href='beyonce23.html'>Beyonce - 23 Colors</a></small><br/>
+          <small><a href='beyonce31.html'>Beyonce - 31 Colors</a></small><br/>
+          <br/>
+        </p>
+
+        <p class="view"><a href="https://github.com/randyzwitch/NoveltyColors.jl">View the Project on GitHub<small>randyzwitch/NoveltyColors.jl</small></a></p>
+
+      </header>
+      <section>
+        <h1 id="contributions">Contributions</h1>
+
+<p>Contributions are absolutely welcome; however, please be sure that any color palette/package code is licensed under the terms of the <a href="https://github.com/randyzwitch/NoveltyColors.jl/blob/master/LICENSE.md">MIT “Expat” license</a> or more permissive.</p>
+
+<p>To submit a contribution, submit a pull request where the data file has the same structure as <a href="https://github.com/randyzwitch/NoveltyColors.jl/blob/master/data/wesanderson.json">WesAnderson.json</a>: the file name represents what the color palette will be called, with the values in the text file as JSON where each key is a <code>AbstractString</code> and its value will be an <code>AbstractArray</code> of hex codes.</p>
+
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
