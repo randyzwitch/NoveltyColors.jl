@@ -65,7 +65,8 @@ function parse(divid,spec) {
       <section>
         <h1 id="code-example">Code Example</h1>
 
-<p>Because NoveltyColors.jl is intended to be incorporated into other packages where color palettes are needed, the <code>ColorDict</code> dictionary is not exported (to avoid polluting the namespace). In order to retrieve an array of CSS hex code, use the pattern <code>NoveltyColors.ColorDict["&lt;palette&gt;"]["&lt;palettename&gt;"]</code>.</p>
+<p>Because NoveltyColors.jl is intended to be incorporated into other packages where color palettes are needed, the <code>ColorDict</code> dictionary is not exported (to avoid polluting the namespace). In order to retrieve an array of CSS hex code, use the pattern:
+	<code>NoveltyColors.ColorDict["&lt;palette&gt;"]["&lt;palettename&gt;"]</code>.</p>
 
 <div class="highlight"><pre><code class="language-julia" data-lang="julia"><span class="n">julia</span><span class="o">&gt;</span> <span class="k">using</span> <span class="n">NoveltyColors</span>
 

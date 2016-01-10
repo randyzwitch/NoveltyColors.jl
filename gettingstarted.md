@@ -7,7 +7,8 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
 
 # Code Example
 
-Because NoveltyColors.jl is intended to be incorporated into other packages where color palettes are needed, the `ColorDict` dictionary is not exported (to avoid polluting the namespace). In order to retrieve an array of CSS hex code, use the pattern `NoveltyColors.ColorDict["<palette>"]["<palettename>"]`.
+Because NoveltyColors.jl is intended to be incorporated into other packages where color palettes are needed, the `ColorDict` dictionary is not exported (to avoid polluting the namespace). In order to retrieve an array of CSS hex code, use the pattern:
+	`NoveltyColors.ColorDict["<palette>"]["<palettename>"]`.
 
 {% highlight julia %}
 julia> using NoveltyColors
