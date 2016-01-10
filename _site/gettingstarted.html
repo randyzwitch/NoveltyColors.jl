@@ -63,7 +63,20 @@ function parse(divid,spec) {
 
       </header>
       <section>
-        <h1 id="contributions">Contributions</h1>
+        <h1 id="code-example">Code Example</h1>
+
+<p>Because NoveltyColors.jl is intended to be incorporated into other packages where color palettes are needed, the <code>ColorDict</code> dictionary is not exported (to avoid polluting the namespace). In order to retrieve an array of CSS hex code, use the pattern <code>NoveltyColors.ColorDict["&lt;palette&gt;"]["&lt;palettename&gt;"]</code>.</p>
+
+<div class="highlight"><pre><code class="language-julia" data-lang="julia"><span class="n">julia</span><span class="o">&gt;</span> <span class="k">using</span> <span class="n">NoveltyColors</span>
+
+<span class="n">julia</span><span class="o">&gt;</span> <span class="n">NoveltyColors</span><span class="o">.</span><span class="n">ColorDict</span><span class="p">[</span><span class="s">&quot;beyonce&quot;</span><span class="p">][</span><span class="s">&quot;4a&quot;</span><span class="p">]</span>
+<span class="mi">4</span><span class="o">-</span><span class="n">element</span> <span class="n">Array</span><span class="p">{</span><span class="kt">Any</span><span class="p">,</span><span class="mi">1</span><span class="p">}:</span>
+ <span class="s">&quot;#000000&quot;</span>
+ <span class="s">&quot;#1E46A2&quot;</span>
+ <span class="s">&quot;#FB323B&quot;</span>
+ <span class="s">&quot;#C5E137&quot;</span></code></pre></div>
+
+<h1 id="contributions">Contributions</h1>
 
 <p>Contributions are absolutely welcome; however, please be sure that any color palette/package code is licensed under the terms of the <a href="https://github.com/randyzwitch/NoveltyColors.jl/blob/master/LICENSE.md">MIT “Expat” license</a> or more permissive.</p>
 
