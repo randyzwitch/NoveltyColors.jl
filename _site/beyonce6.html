@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>NoveltyColors.jl: A Julia package for fun or non-standard color palettes</title>
+
+    <link rel="stylesheet" href="stylesheets/minimal_styles.css">
+    <link rel="stylesheet" href="stylesheets/minimal_pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://vega.github.io/vega-editor/vendor/d3.min.js"></script>
+    <script src="http://vega.github.io/vega-editor/vendor/d3.geo.projection.min.js"></script>
+    <script src="http://vega.github.io/vega-editor/vendor/topojson.js"></script>
+    <script src="http://vega.github.io/vega-editor/vendor/d3.layout.cloud.js"></script>
+    <script src="http://vega.github.io/vega/vega.min.js"></script>
+
+         <script type="text/javascript">
+// parse a spec and create a visualization view
+function parse(divid,spec) {
+  vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+}
+</script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="https://github.com/randyzwitch/NoveltyColors.jl"><h1>NoveltyColors.jl</h1></a>
+        <p>A Julia package for fun or non-standard color palettes</p>
+
+        <p>
+          <small><a href='gettingstarted.html'>Getting Started</a></small>
+          <br/>
+          <h4>Palettes</h3>
+          <small><a href='wesanderson4.html'>Wes Anderson - 4 Colors</a></small><br/>
+          <small><a href='wesanderson5.html'>Wes Anderson - 5 Colors</a></small><br/>
+          <small><a href='wesanderson7.html'>Wes Anderson - 7 Colors</a></small><br/>
+          <small><a href='beyonce4.html'>Beyonce - 4 Colors</a></small><br/>
+          <small><a href='beyonce5.html'>Beyonce - 5 Colors</a></small><br/>
+          <small><a href='beyonce6.html'>Beyonce - 6 Colors</a></small><br/>
+          <small><a href='beyonce7.html'>Beyonce - 7 Colors</a></small><br/>
+          <small><a href='beyonce8.html'>Beyonce - 8 Colors</a></small><br/>
+          <small><a href='beyonce9.html'>Beyonce - 9 Colors</a></small><br/>
+          <small><a href='beyonce10.html'>Beyonce - 10 Colors</a></small><br/>
+          <small><a href='beyonce11.html'>Beyonce - 11 Colors</a></small><br/>
+          <small><a href='beyonce12.html'>Beyonce - 12 Colors</a></small><br/>
+          <small><a href='beyonce13.html'>Beyonce - 13 Colors</a></small><br/>
+          <small><a href='beyonce14.html'>Beyonce - 14 Colors</a></small><br/>
+          <small><a href='beyonce15.html'>Beyonce - 15 Colors</a></small><br/>
+          <small><a href='beyonce16.html'>Beyonce - 16 Colors</a></small><br/>
+          <small><a href='beyonce17.html'>Beyonce - 17 Colors</a></small><br/>
+          <small><a href='beyonce18.html'>Beyonce - 18 Colors</a></small><br/>
+          <small><a href='beyonce19.html'>Beyonce - 19 Colors</a></small><br/>
+          <small><a href='beyonce20.html'>Beyonce - 20 Colors</a></small><br/>
+          <small><a href='beyonce21.html'>Beyonce - 21 Colors</a></small><br/>
+          <small><a href='beyonce23.html'>Beyonce - 23 Colors</a></small><br/>
+          <small><a href='beyonce31.html'>Beyonce - 31 Colors</a></small><br/>
+          <br/>
+        </p>
+
+        <p class="view"><a href="https://github.com/randyzwitch/NoveltyColors.jl">View the Project on GitHub<small>randyzwitch/NoveltyColors.jl</small></a></p>
+
+      </header>
+      <section>
+        <h1 id="beyonce---6-colors">Beyonce - 6 Colors</h1>
+
+<p><a href="https://gist.github.com/dill/fb75131e618c52564fc9">Palette</a> copied from <a href="https://github.com/dill/beyonce">beyonce R package</a> by DL Miller, based on the collection shown at <a href="http://beyoncepalettes.tumblr.com/">http://beyoncepalettes.tumblr.com/</a>. The Beyonce palettes are labeled based on number of colors in the palette, then sorted lexographically, a deviation from the ordering in the R package.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number of Colors</th>
+      <th>Name</th>
+      <th>Colors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6</td>
+      <td>6a</td>
+      <td><img src="images/beyonce/6/6a.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6aa</td>
+      <td><img src="images/beyonce/6/6aa.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6aaa</td>
+      <td><img src="images/beyonce/6/6aaa.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6b</td>
+      <td><img src="images/beyonce/6/6b.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6bb</td>
+      <td><img src="images/beyonce/6/6bb.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6bbb</td>
+      <td><img src="images/beyonce/6/6bbb.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6c</td>
+      <td><img src="images/beyonce/6/6c.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6cc</td>
+      <td><img src="images/beyonce/6/6cc.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6ccc</td>
+      <td><img src="images/beyonce/6/6ccc.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6d</td>
+      <td><img src="images/beyonce/6/6d.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6dd</td>
+      <td><img src="images/beyonce/6/6dd.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6ddd</td>
+      <td><img src="images/beyonce/6/6ddd.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6e</td>
+      <td><img src="images/beyonce/6/6e.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6ee</td>
+      <td><img src="images/beyonce/6/6ee.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6eee</td>
+      <td><img src="images/beyonce/6/6eee.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6f</td>
+      <td><img src="images/beyonce/6/6f.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6ff</td>
+      <td><img src="images/beyonce/6/6ff.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6fff</td>
+      <td><img src="images/beyonce/6/6fff.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6g</td>
+      <td><img src="images/beyonce/6/6g.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6gg</td>
+      <td><img src="images/beyonce/6/6gg.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6ggg</td>
+      <td><img src="images/beyonce/6/6ggg.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6h</td>
+      <td><img src="images/beyonce/6/6h.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6hh</td>
+      <td><img src="images/beyonce/6/6hh.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6hhh</td>
+      <td><img src="images/beyonce/6/6hhh.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6i</td>
+      <td><img src="images/beyonce/6/6i.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6ii</td>
+      <td><img src="images/beyonce/6/6ii.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6iii</td>
+      <td><img src="images/beyonce/6/6iii.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6j</td>
+      <td><img src="images/beyonce/6/6j.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6jj</td>
+      <td><img src="images/beyonce/6/6jj.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6jjj</td>
+      <td><img src="images/beyonce/6/6jjj.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6k</td>
+      <td><img src="images/beyonce/6/6k.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6kk</td>
+      <td><img src="images/beyonce/6/6kk.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6kkk</td>
+      <td><img src="images/beyonce/6/6kkk.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6l</td>
+      <td><img src="images/beyonce/6/6l.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6ll</td>
+      <td><img src="images/beyonce/6/6ll.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6lll</td>
+      <td><img src="images/beyonce/6/6lll.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6m</td>
+      <td><img src="images/beyonce/6/6m.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6mm</td>
+      <td><img src="images/beyonce/6/6mm.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6mmm</td>
+      <td><img src="images/beyonce/6/6mmm.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6n</td>
+      <td><img src="images/beyonce/6/6n.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6nn</td>
+      <td><img src="images/beyonce/6/6nn.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6nnn</td>
+      <td><img src="images/beyonce/6/6nnn.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6o</td>
+      <td><img src="images/beyonce/6/6o.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6oo</td>
+      <td><img src="images/beyonce/6/6oo.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6p</td>
+      <td><img src="images/beyonce/6/6p.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6pp</td>
+      <td><img src="images/beyonce/6/6pp.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6q</td>
+      <td><img src="images/beyonce/6/6q.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6qq</td>
+      <td><img src="images/beyonce/6/6qq.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6r</td>
+      <td><img src="images/beyonce/6/6r.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6rr</td>
+      <td><img src="images/beyonce/6/6rr.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6s</td>
+      <td><img src="images/beyonce/6/6s.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6ss</td>
+      <td><img src="images/beyonce/6/6ss.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6t</td>
+      <td><img src="images/beyonce/6/6t.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6tt</td>
+      <td><img src="images/beyonce/6/6tt.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6u</td>
+      <td><img src="images/beyonce/6/6u.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6uu</td>
+      <td><img src="images/beyonce/6/6uu.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6v</td>
+      <td><img src="images/beyonce/6/6v.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6vv</td>
+      <td><img src="images/beyonce/6/6vv.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6w</td>
+      <td><img src="images/beyonce/6/6w.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6ww</td>
+      <td><img src="images/beyonce/6/6ww.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6x</td>
+      <td><img src="images/beyonce/6/6x.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6xx</td>
+      <td><img src="images/beyonce/6/6xx.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6y</td>
+      <td><img src="images/beyonce/6/6y.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6yy</td>
+      <td><img src="images/beyonce/6/6yy.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6z</td>
+      <td><img src="images/beyonce/6/6z.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6zz</td>
+      <td><img src="images/beyonce/6/6zz.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
