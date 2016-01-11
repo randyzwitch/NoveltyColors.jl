@@ -1,0 +1,177 @@
+{
+  "SandyStoneBeach": [
+    "#E6E2AF",
+    "#A7A37E",
+    "#EFECCA",
+    "#046380",
+    "#002F2F"
+  ],
+  "Firenze": [
+    "#468966",
+    "#FFF0A5",
+    "#FFB03B",
+    "#B64926",
+    "#8E2800"
+  ],
+  "NeutralBlue": [
+    "#FCFFF5",
+    "#D1DBBD",
+    "#91AA9D",
+    "#3E606F",
+    "#193441"
+  ],
+  "Phaedra": [
+    "#FF6138",
+    "#FFFF9D",
+    "#BEEB9F",
+    "#79BD8F",
+    "#00A388"
+  ],
+  "HoneyPot": [
+    "#105B63",
+    "#FFFAD5",
+    "#FFD34E",
+    "#DB9E36",
+    "#BD4932"
+  ],
+  "AspirinC": [
+    "#225378",
+    "#1695A3",
+    "#ACF0F2",
+    "#F3FFE2",
+    "#EB7F00"
+  ],
+  "1944Mustang": [
+    "#000000",
+    "#263248",
+    "#7E8AA2",
+    "#FFFFFF",
+    "#FF9800"
+  ],
+  "FlatUI": [
+    "#2C3E50",
+    "#E74C3C",
+    "#ECF0F1",
+    "#3498DB",
+    "#2980B9"
+  ],
+  "VitaminC": [
+    "#004358",
+    "#1F8A70",
+    "#BEDB39",
+    "#FFE11A",
+    "#FD7400"
+  ],
+  "SeaWolf": [
+    "#DC3522",
+    "#D9CB9E",
+    "#374140",
+    "#2A2C2B",
+    "#1E1E20"
+  ],
+  "CherryCheesecake": [
+    "#B9121B",
+    "#4C1B1B",
+    "#F6E497",
+    "#FCFAE1",
+    "#BD8D46"
+  ],
+  "Watermelon": [
+    "#7D8A2E",
+    "#C9D787",
+    "#FFFFFF",
+    "#FFC0A9",
+    "#FF8598"
+  ],
+  "CircusIII": [
+    "#2E0927",
+    "#D90000",
+    "#FF2D00",
+    "#FF8C00",
+    "#04756F"
+  ],
+  "TechOffice": [
+    "#595241",
+    "#B8AE9C",
+    "#FFFFFF",
+    "#ACCFCC",
+    "#8A0917"
+  ],
+  "ZenAndTea": [
+    "#10222B",
+    "#95AB63",
+    "#BDD684",
+    "#E2F0D6",
+    "#F6FFE0"
+  ],
+  "CS04": [
+    "#F6F792",
+    "#333745",
+    "#77C4D3",
+    "#DAEDE2",
+    "#EA2E49"
+  ],
+  "VintageRL": [
+    "#703030",
+    "#2F343B",
+    "#7E827A",
+    "#E3CDA4",
+    "#C77966"
+  ],
+  "JapaneseGarden": [
+    "#D8CAA8",
+    "#5C832F",
+    "#284907",
+    "#382513",
+    "#363942"
+  ],
+  "OrangeOnGray": [
+    "#FFF8E3",
+    "#CCCC9F",
+    "#33332D",
+    "#9FB4CC",
+    "#DB4105"
+  ],
+  "FriendsAndFoes": [
+    "#2F2933",
+    "#01A2A6",
+    "#29D9C2",
+    "#BDF271",
+    "#FFFFA6"
+  ],
+  "GrannySmithApple": [
+    "#85DB18",
+    "#CDE855",
+    "#F5F6D4",
+    "#A7C520",
+    "#493F0B"
+  ],
+  "PearLemonFizz": [
+    "#04BFBF",
+    "#CAFCD8",
+    "#F7E967",
+    "#A9CF54",
+    "#588F27"
+  ],
+  "DustyPetrol": [
+    "#292929",
+    "#5B7876",
+    "#8F9E8B",
+    "#F2E6B6",
+    "#412A22"
+  ],
+  "TimesChanging": [
+    "#332532",
+    "#644D52",
+    "#F77A52",
+    "#FF974F",
+    "#A49A87"
+  ],
+  "OceanSunset": [
+    "#405952",
+    "#9C9B7A",
+    "#FFD393",
+    "#FF974F",
+    "#F54F29"
+  ]
+}
