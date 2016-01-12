@@ -12,15 +12,27 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <script src="javascripts/scale.fix.js"></script>
     <script src="http://vega.github.io/vega-editor/vendor/d3.min.js"></script>
     <script src="http://vega.github.io/vega/vega.min.js"></script>
+    <script src="javascripts/colorchip.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-         <script type="text/javascript">
-// parse a spec and create a visualization view
-function parse(divid,spec) {
-  vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
-}
-</script>
+    <script type="text/javascript">
+
+      var acw;
+      $.getJSON("javascripts/acw.json", function(json) {
+          acw = json;
+      });
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid])
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+    </script>
 
   </head>
   <body>
@@ -32,30 +44,34 @@ function parse(divid,spec) {
         <p>
           <small><a href='gettingstarted.html'>Getting Started</a></small>
           <br/>
-          <h4>Palettes</h3>
-          <small><a href='wesanderson4.html'>Wes Anderson - 4 Colors</a></small><br/>
-          <small><a href='wesanderson5.html'>Wes Anderson - 5 Colors</a></small><br/>
-          <small><a href='wesanderson7.html'>Wes Anderson - 7 Colors</a></small><br/>
-          <small><a href='beyonce4.html'>Beyonce - 4 Colors</a></small><br/>
-          <small><a href='beyonce5.html'>Beyonce - 5 Colors</a></small><br/>
-          <small><a href='beyonce6.html'>Beyonce - 6 Colors</a></small><br/>
-          <small><a href='beyonce7.html'>Beyonce - 7 Colors</a></small><br/>
-          <small><a href='beyonce8.html'>Beyonce - 8 Colors</a></small><br/>
-          <small><a href='beyonce9.html'>Beyonce - 9 Colors</a></small><br/>
-          <small><a href='beyonce10.html'>Beyonce - 10 Colors</a></small><br/>
-          <small><a href='beyonce11.html'>Beyonce - 11 Colors</a></small><br/>
-          <small><a href='beyonce12.html'>Beyonce - 12 Colors</a></small><br/>
-          <small><a href='beyonce13.html'>Beyonce - 13 Colors</a></small><br/>
-          <small><a href='beyonce14.html'>Beyonce - 14 Colors</a></small><br/>
-          <small><a href='beyonce15.html'>Beyonce - 15 Colors</a></small><br/>
-          <small><a href='beyonce16.html'>Beyonce - 16 Colors</a></small><br/>
-          <small><a href='beyonce17.html'>Beyonce - 17 Colors</a></small><br/>
-          <small><a href='beyonce18.html'>Beyonce - 18 Colors</a></small><br/>
-          <small><a href='beyonce19.html'>Beyonce - 19 Colors</a></small><br/>
-          <small><a href='beyonce20.html'>Beyonce - 20 Colors</a></small><br/>
-          <small><a href='beyonce21.html'>Beyonce - 21 Colors</a></small><br/>
-          <small><a href='beyonce23.html'>Beyonce - 23 Colors</a></small><br/>
-          <small><a href='beyonce31.html'>Beyonce - 31 Colors</a></small><br/>
+          <h3>Palettes</h3>
+          <h4>ACW</h4>
+          <small><a href='acw.html'>5 Colors</a></small><br/>
+          <h4>Beyonce</h4>
+          <small><a href='beyonce4.html'>4 Colors</a></small><br/>
+          <small><a href='beyonce5.html'>5 Colors</a></small><br/>
+          <small><a href='beyonce6.html'>6 Colors</a></small><br/>
+          <small><a href='beyonce7.html'>7 Colors</a></small><br/>
+          <small><a href='beyonce8.html'>8 Colors</a></small><br/>
+          <small><a href='beyonce9.html'>9 Colors</a></small><br/>
+          <small><a href='beyonce10.html'>10 Colors</a></small><br/>
+          <small><a href='beyonce11.html'>11 Colors</a></small><br/>
+          <small><a href='beyonce12.html'>12 Colors</a></small><br/>
+          <small><a href='beyonce13.html'>13 Colors</a></small><br/>
+          <small><a href='beyonce14.html'>14 Colors</a></small><br/>
+          <small><a href='beyonce15.html'>15 Colors</a></small><br/>
+          <small><a href='beyonce16.html'>16 Colors</a></small><br/>
+          <small><a href='beyonce17.html'>17 Colors</a></small><br/>
+          <small><a href='beyonce18.html'>18 Colors</a></small><br/>
+          <small><a href='beyonce19.html'>19 Colors</a></small><br/>
+          <small><a href='beyonce20.html'>20 Colors</a></small><br/>
+          <small><a href='beyonce21.html'>21 Colors</a></small><br/>
+          <small><a href='beyonce23.html'>23 Colors</a></small><br/>
+          <small><a href='beyonce31.html'>31 Colors</a></small><br/>
+          <h4>Wes Anderson</h4>
+          <small><a href='wesanderson4.html'>4 Colors</a></small><br/>
+          <small><a href='wesanderson5.html'>5 Colors</a></small><br/>
+          <small><a href='wesanderson7.html'>7 Colors</a></small><br/>
           <br/>
         </p>
 
@@ -413,6 +429,5 @@ function parse(divid,spec) {
       <footer>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>
