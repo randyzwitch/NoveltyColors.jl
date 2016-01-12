@@ -21,8 +21,34 @@
     <script type="text/javascript">
 
       var acw;
-      $.getJSON("javascripts/acw.json", function(json) {
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/acw.json", function(json) {
           acw = json;
+      })
+      .done(function(json) {
+                parse("SandyStoneBeach", acw);
+                parse("Firenze", acw);
+                parse("NeutralBlue", acw);
+                parse("Phaedra", acw);
+                parse("HoneyPot", acw);
+                parse("Mustang", acw);
+                parse("FlatUI", acw);
+                parse("VitaminC", acw);
+                parse("SeaWolf", acw);
+                parse("CherryCheesecake", acw);
+                parse("Watermelon", acw);
+                parse("CircusIII", acw);
+                parse("TechOffice", acw);
+                parse("ZenAndTea", acw);
+                parse("CS04", acw);
+                parse("VintageRL", acw);
+                parse("JapaneseGarden", acw);
+                parse("OrangeOnGray", acw);
+                parse("FriendsAndFoes", acw);
+                parse("GrannySmithApple", acw);
+                parse("PearLemonFizz", acw);
+                parse("DustyPetrol", acw);
+                parse("TimesChanging", acw);
+                parse("OceanSunset", acw);
       });
 
       // parse a spec and create a visualization view
