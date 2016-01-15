@@ -116,31 +116,26 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
   </tbody>
 </table>
 
-<script type="text/javascript">
+<div>
+      <script type="text/javascript">
 
-	    parse("SandyStoneBeach", acw);
-		parse("Firenze", acw);
-		parse("NeutralBlue", acw);
-		parse("Phaedra", acw);
-		parse("HoneyPot", acw);
-		parse("Mustang", acw);
-		parse("FlatUI", acw);
-		parse("VitaminC", acw);
-		parse("SeaWolf", acw);
-		parse("CherryCheesecake", acw);
-		parse("Watermelon", acw);
-		parse("CircusIII", acw);
-		parse("TechOffice", acw);
-		parse("ZenAndTea", acw);
-		parse("CS04", acw);
-		parse("VintageRL", acw);
-		parse("JapaneseGarden", acw);
-		parse("OrangeOnGray", acw);
-		parse("FriendsAndFoes", acw);
-		parse("GrannySmithApple", acw);
-		parse("PearLemonFizz", acw);
-		parse("DustyPetrol", acw);
-		parse("TimesChanging", acw);
-		parse("OceanSunset", acw);
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
 
-</script>
+        spec = colorchip(palette[divid], 50, 400)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var acw;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/acw.json", function(json) {
+          acw = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(acw).length; i++){
+                  parse(Object.keys(acw)[i], acw);
+                }
+      });
+
+    </script>
+<div>

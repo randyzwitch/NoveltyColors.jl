@@ -13,3 +13,46 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
 |---|---|---|
 |4|4a|![](images/beyonce/4/4a.png)|
 |4|4b|![](images/beyonce/4/4b.png)|
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Colors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4a</td>
+      <td><div id="b4a"></div></td>
+    </tr>
+    <tr>
+      <td>4b</td>
+      <td><div id="b4b"></div></td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 400)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var bey;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/beyonce.json", function(json) {
+          bey = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(bey).length; i++){
+                  parse(Object.keys(bey)[i], bey);
+                }
+      });
+
+    </script>
+<div>

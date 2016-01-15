@@ -9,14 +9,73 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
 
 [Palette](https://github.com/karthik/wesanderson/blob/master/R/colors.R) copied verbatim from [wesanderson R package](https://github.com/karthik/wesanderson) by Karthik Ram (converted to JSON).
 
-|Number of Colors | Name  | Colors|
-|---|---|---|
-|5|BottleRocket2|![](images/wesanderson/BottleRocket2.png)|
-|5|Cavalcanti1|![](images/wesanderson/Cavalcanti1.png)|
-|5|Darjeeling1|![](images/wesanderson/Darjeeling1.png)|
-|5|Darjeeling2|![](images/wesanderson/Darjeeling2.png)|
-|5|FantasticFox1|![](images/wesanderson/FantasticFox1.png)|
-|5|Moonrise3|![](images/wesanderson/Moonrise3.png)|
-|5|Royal2|![](images/wesanderson/Royal2.png)|
-|5|Rushmore1|![](images/wesanderson/Rushmore1.png)|
-|5|Zissou1|![](images/wesanderson/Zissou1.png)|
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Colors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BottleRocket2</td>
+      <td><div id="BottleRocket2"></div></td>
+    </tr>
+    <tr>
+      <td>Cavalcanti1</td>
+      <td><div id="Cavalcanti1"></div></td>
+    </tr>
+    <tr>
+      <td>Darjeeling1</td>
+      <td><div id="Darjeeling1"></div></td>
+    </tr>
+    <tr>
+      <td>Darjeeling2</td>
+      <td><div id="Darjeeling2"></div></td>
+    </tr>
+    <tr>
+      <td>FantasticFox1</td>
+      <td><div id="FantasticFox1"></div></td>
+    </tr>
+    <tr>
+      <td>Moonrise3</td>
+      <td><div id="Moonrise3"></div></td>
+    </tr>
+        <tr>
+      <td>Royal2</td>
+      <td><div id="Royal2"></div></td>
+    </tr>
+        <tr>
+      <td>Rushmore1</td>
+      <td><div id="Rushmore1"></div></td>
+    </tr>
+        <tr>
+      <td>Zissou1</td>
+      <td><div id="Zissou1"></div></td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 400)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var wes;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/wesanderson.json", function(json) {
+          wes = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(wes).length; i++){
+                  parse(Object.keys(wes)[i], wes);
+                }
+      });
+
+    </script>
+<div>

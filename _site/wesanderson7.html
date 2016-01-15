@@ -18,48 +18,6 @@
     <script src="javascripts/colorchip.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <script type="text/javascript">
-
-      var acw;
-      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/acw.json", function(json) {
-          acw = json;
-      })
-      .done(function(json) {
-                parse("SandyStoneBeach", acw);
-                parse("Firenze", acw);
-                parse("NeutralBlue", acw);
-                parse("Phaedra", acw);
-                parse("HoneyPot", acw);
-                parse("Mustang", acw);
-                parse("FlatUI", acw);
-                parse("VitaminC", acw);
-                parse("SeaWolf", acw);
-                parse("CherryCheesecake", acw);
-                parse("Watermelon", acw);
-                parse("CircusIII", acw);
-                parse("TechOffice", acw);
-                parse("ZenAndTea", acw);
-                parse("CS04", acw);
-                parse("VintageRL", acw);
-                parse("JapaneseGarden", acw);
-                parse("OrangeOnGray", acw);
-                parse("FriendsAndFoes", acw);
-                parse("GrannySmithApple", acw);
-                parse("PearLemonFizz", acw);
-                parse("DustyPetrol", acw);
-                parse("TimesChanging", acw);
-                parse("OceanSunset", acw);
-      });
-
-      // parse a spec and create a visualization view
-      function parse(divid, palette) {
-
-        spec = colorchip(palette[divid])
-        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
-      }
-
-    </script>
-
   </head>
   <body>
     <div class="wrapper">
@@ -112,19 +70,42 @@
 <table>
   <thead>
     <tr>
-      <th>Number of Colors</th>
       <th>Name</th>
       <th>Colors</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>7</td>
       <td>BottleRocket1</td>
-      <td><img src="images/wesanderson/BottleRocket1.png" alt="" /></td>
+      <td><div id="BottleRocket1"></div></td>
     </tr>
   </tbody>
 </table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 400)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var wes;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/wesanderson.json", function(json) {
+          wes = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(wes).length; i++){
+                  parse(Object.keys(wes)[i], wes);
+                }
+      });
+
+    </script>
+<div>
+</div></div>
 
       </section>
       <footer>

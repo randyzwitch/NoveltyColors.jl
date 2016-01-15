@@ -9,11 +9,61 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
 
 [Palette](https://github.com/karthik/wesanderson/blob/master/R/colors.R) copied verbatim from [wesanderson R package](https://github.com/karthik/wesanderson) by Karthik Ram (converted to JSON).
 
-|Number of Colors | Name  | Colors|
-|---|---|---|
-|4|Chevalier1|![](images/wesanderson/Chevalier1.png)|
-|4|GrandBudapest1|![](images/wesanderson/GrandBudapest1.png)|
-|4|GrandBudapest2|![](images/wesanderson/GrandBudapest2.png)|
-|4|Moonrise1|![](images/wesanderson/Moonrise1.png)|
-|4|Moonrise2|![](images/wesanderson/Moonrise2.png)|
-|4|Royal1|![](images/wesanderson/Royal1.png)|
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Colors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chevalier1</td>
+      <td><div id="Chevalier1"></div></td>
+    </tr>
+    <tr>
+      <td>GrandBudapest1</td>
+      <td><div id="GrandBudapest1"></div></td>
+    </tr>
+    <tr>
+      <td>GrandBudapest2</td>
+      <td><div id="GrandBudapest2"></div></td>
+    </tr>
+    <tr>
+      <td>Moonrise1</td>
+      <td><div id="Moonrise1"></div></td>
+    </tr>
+    <tr>
+      <td>Moonrise2</td>
+      <td><div id="Moonrise2"></div></td>
+    </tr>
+    <tr>
+      <td>Royal1</td>
+      <td><div id="Royal1"></div></td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 400)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var wes;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/wesanderson.json", function(json) {
+          wes = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(wes).length; i++){
+                  parse(Object.keys(wes)[i], wes);
+                }
+      });
+
+    </script>
+<div>
