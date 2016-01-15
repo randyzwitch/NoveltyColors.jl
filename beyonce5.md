@@ -9,12 +9,65 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
 
 [Palette](https://gist.github.com/dill/fb75131e618c52564fc9) copied from [beyonce R package](https://github.com/dill/beyonce) by DL Miller, based on the collection shown at [http://beyoncepalettes.tumblr.com/](http://beyoncepalettes.tumblr.com/). The Beyonce palettes are labeled based on number of colors in the palette, then sorted lexographically, a deviation from the ordering in the R package.
 
-|Number of Colors | Name  | Colors|
-|---|---|---|
-|5|5a|![](images/beyonce/5/5a.png)|
-|5|5b|![](images/beyonce/5/5b.png)|
-|5|5c|![](images/beyonce/5/5c.png)|
-|5|5d|![](images/beyonce/5/5d.png)|
-|5|5e|![](images/beyonce/5/5e.png)|
-|5|5f|![](images/beyonce/5/5f.png)|
-|5|5g|![](images/beyonce/5/5g.png)|
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Colors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5a</td>
+      <td><div id="b5a"></div></td>
+    </tr>
+    <tr>
+      <td>5b</td>
+      <td><div id="b5b"></div></td>
+    </tr>
+    <tr>
+      <td>5c</td>
+      <td><div id="b5c"></div></td>
+    </tr>
+     <tr>
+      <td>5d</td>
+      <td><div id="b5d"></div></td>
+    </tr>
+     <tr>
+      <td>5e</td>
+      <td><div id="b5e"></div></td>
+    </tr>
+    <tr>
+      <td>5f</td>
+      <td><div id="b5f"></div></td>
+    </tr>
+     <tr>
+      <td>5g</td>
+      <td><div id="b5g"></div></td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 400)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var bey;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/beyonce.json", function(json) {
+          bey = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(bey).length; i++){
+                  parse(Object.keys(bey)[i], bey);
+                }
+      });
+
+    </script>
+<div>

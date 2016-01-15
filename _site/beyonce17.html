@@ -70,24 +70,45 @@
 <table>
   <thead>
     <tr>
-      <th>Number of Colors</th>
       <th>Name</th>
       <th>Colors</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>17</td>
       <td>17a</td>
-      <td><img src="images/beyonce/17/17a.png" alt="" /></td>
+      <td><div id="b17a"></div></td>
     </tr>
-    <tr>
-      <td>17</td>
+        <tr>
       <td>17b</td>
-      <td><img src="images/beyonce/17/17b.png" alt="" /></td>
+      <td><div id="b17b"></div></td>
     </tr>
   </tbody>
 </table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 625)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var bey;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/beyonce.json", function(json) {
+          bey = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(bey).length; i++){
+                  parse(Object.keys(bey)[i], bey);
+                }
+      });
+
+    </script>
+</div>
 
       </section>
       <footer>

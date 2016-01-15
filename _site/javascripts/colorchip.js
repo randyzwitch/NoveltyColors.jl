@@ -12,13 +12,6 @@
           ]
         }
       ],
-      "predicates": [
-        {
-          "name": "tooltip",
-          "type": "==",
-          "operands": [{"signal": "tooltip._id"},{"arg": "id"}]
-        }
-      ],
       "marks": [
         {
           "properties": {
@@ -55,16 +48,7 @@
               "x": {"scale": "x","signal": "tooltip.x"},
               "dx": {"scale": "x","band": true,"mult": 0.5},
               "y": {"scale": "y","signal": "tooltip.y","offset": -5},
-              "text": {"signal": "tooltip.color"},
-              "fillOpacity": {
-                "rule": [
-                  {
-                    "predicate": {"name": "tooltip","id": {"value": null}},
-                    "value": 0
-                  },
-                  {"value": 1}
-                ]
-              }
+              "text": {"signal": "tooltip.color"}
             }
           }
         }

@@ -9,71 +9,434 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
 
 [Palette](https://gist.github.com/dill/fb75131e618c52564fc9) copied from [beyonce R package](https://github.com/dill/beyonce) by DL Miller, based on the collection shown at [http://beyoncepalettes.tumblr.com/](http://beyoncepalettes.tumblr.com/). The Beyonce palettes are labeled based on number of colors in the palette, then sorted lexographically, a deviation from the ordering in the R package.
 
-|Number of Colors | Name  | Colors|
-|---|---|---|
-|6|6a|![](images/beyonce/6/6a.png)|
-|6|6aa|![](images/beyonce/6/6aa.png)|
-|6|6aaa|![](images/beyonce/6/6aaa.png)|
-|6|6b|![](images/beyonce/6/6b.png)|
-|6|6bb|![](images/beyonce/6/6bb.png)|
-|6|6bbb|![](images/beyonce/6/6bbb.png)|
-|6|6c|![](images/beyonce/6/6c.png)|
-|6|6cc|![](images/beyonce/6/6cc.png)|
-|6|6ccc|![](images/beyonce/6/6ccc.png)|
-|6|6d|![](images/beyonce/6/6d.png)|
-|6|6dd|![](images/beyonce/6/6dd.png)|
-|6|6ddd|![](images/beyonce/6/6ddd.png)|
-|6|6e|![](images/beyonce/6/6e.png)|
-|6|6ee|![](images/beyonce/6/6ee.png)|
-|6|6eee|![](images/beyonce/6/6eee.png)|
-|6|6f|![](images/beyonce/6/6f.png)|
-|6|6ff|![](images/beyonce/6/6ff.png)|
-|6|6fff|![](images/beyonce/6/6fff.png)|
-|6|6g|![](images/beyonce/6/6g.png)|
-|6|6gg|![](images/beyonce/6/6gg.png)|
-|6|6ggg|![](images/beyonce/6/6ggg.png)|
-|6|6h|![](images/beyonce/6/6h.png)|
-|6|6hh|![](images/beyonce/6/6hh.png)|
-|6|6hhh|![](images/beyonce/6/6hhh.png)|
-|6|6i|![](images/beyonce/6/6i.png)|
-|6|6ii|![](images/beyonce/6/6ii.png)|
-|6|6iii|![](images/beyonce/6/6iii.png)|
-|6|6j|![](images/beyonce/6/6j.png)|
-|6|6jj|![](images/beyonce/6/6jj.png)|
-|6|6jjj|![](images/beyonce/6/6jjj.png)|
-|6|6k|![](images/beyonce/6/6k.png)|
-|6|6kk|![](images/beyonce/6/6kk.png)|
-|6|6kkk|![](images/beyonce/6/6kkk.png)|
-|6|6l|![](images/beyonce/6/6l.png)|
-|6|6ll|![](images/beyonce/6/6ll.png)|
-|6|6lll|![](images/beyonce/6/6lll.png)|
-|6|6m|![](images/beyonce/6/6m.png)|
-|6|6mm|![](images/beyonce/6/6mm.png)|
-|6|6mmm|![](images/beyonce/6/6mmm.png)|
-|6|6n|![](images/beyonce/6/6n.png)|
-|6|6nn|![](images/beyonce/6/6nn.png)|
-|6|6nnn|![](images/beyonce/6/6nnn.png)|
-|6|6o|![](images/beyonce/6/6o.png)|
-|6|6oo|![](images/beyonce/6/6oo.png)|
-|6|6p|![](images/beyonce/6/6p.png)|
-|6|6pp|![](images/beyonce/6/6pp.png)|
-|6|6q|![](images/beyonce/6/6q.png)|
-|6|6qq|![](images/beyonce/6/6qq.png)|
-|6|6r|![](images/beyonce/6/6r.png)|
-|6|6rr|![](images/beyonce/6/6rr.png)|
-|6|6s|![](images/beyonce/6/6s.png)|
-|6|6ss|![](images/beyonce/6/6ss.png)|
-|6|6t|![](images/beyonce/6/6t.png)|
-|6|6tt|![](images/beyonce/6/6tt.png)|
-|6|6u|![](images/beyonce/6/6u.png)|
-|6|6uu|![](images/beyonce/6/6uu.png)|
-|6|6v|![](images/beyonce/6/6v.png)|
-|6|6vv|![](images/beyonce/6/6vv.png)|
-|6|6w|![](images/beyonce/6/6w.png)|
-|6|6ww|![](images/beyonce/6/6ww.png)|
-|6|6x|![](images/beyonce/6/6x.png)|
-|6|6xx|![](images/beyonce/6/6xx.png)|
-|6|6y|![](images/beyonce/6/6y.png)|
-|6|6yy|![](images/beyonce/6/6yy.png)|
-|6|6z|![](images/beyonce/6/6z.png)|
-|6|6zz|![](images/beyonce/6/6zz.png)|
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Colors</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>6a</td>
+            <td>
+                <div id="b6a"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6aa</td>
+            <td>
+                <div id="b6aa"></div>
+            </td>
+        </tr>
+        <tr>
+        <tr>
+            <td>6aaa</td>
+            <td>
+                <div id="b6aaa"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6b</td>
+            <td>
+                <div id="b6b"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6bb</td>
+            <td>
+                <div id="b6bb"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6bbb</td>
+            <td>
+                <div id="b6bbb"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6c</td>
+            <td>
+                <div id="b6c"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6cc</td>
+            <td>
+                <div id="b6cc"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6ccc</td>
+            <td>
+                <div id="b6ccc"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6d</td>
+            <td>
+                <div id="b6d"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6dd</td>
+            <td>
+                <div id="b6dd"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6ddd</td>
+            <td>
+                <div id="b6ddd"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6e</td>
+            <td>
+                <div id="b6e"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6ee</td>
+            <td>
+                <div id="b6ee"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6eee</td>
+            <td>
+                <div id="b6eee"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6f</td>
+            <td>
+                <div id="b6f"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6ff</td>
+            <td>
+                <div id="b6ff"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6fff</td>
+            <td>
+                <div id="b6fff"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6g</td>
+            <td>
+                <div id="b6g"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6gg</td>
+            <td>
+                <div id="b6gg"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6ggg</td>
+            <td>
+                <div id="b6ggg"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6h</td>
+            <td>
+                <div id="b6h"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6hh</td>
+            <td>
+                <div id="b6hh"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6hhh</td>
+            <td>
+                <div id="b6hhh"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6i</td>
+            <td>
+                <div id="b6i"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6ii</td>
+            <td>
+                <div id="b6ii"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6iii</td>
+            <td>
+                <div id="b6iii"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6j</td>
+            <td>
+                <div id="b6j"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6jj</td>
+            <td>
+                <div id="b6jj"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6jjj</td>
+            <td>
+                <div id="b6jjj"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6k</td>
+            <td>
+                <div id="b6k"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6kk</td>
+            <td>
+                <div id="b6kk"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6kkk</td>
+            <td>
+                <div id="b6kkk"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6l</td>
+            <td>
+                <div id="b6l"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6ll</td>
+            <td>
+                <div id="b6ll"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6lll</td>
+            <td>
+                <div id="b6lll"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6m</td>
+            <td>
+                <div id="b6m"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6mm</td>
+            <td>
+                <div id="b6mm"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6mmm</td>
+            <td>
+                <div id="b6mmm"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6n</td>
+            <td>
+                <div id="b6n"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6nn</td>
+            <td>
+                <div id="b6nn"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6nnn</td>
+            <td>
+                <div id="b6nnn"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6o</td>
+            <td>
+                <div id="b6o"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6oo</td>
+            <td>
+                <div id="b6oo"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6p</td>
+            <td>
+                <div id="b6p"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6pp</td>
+            <td>
+                <div id="b6pp"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6q</td>
+            <td>
+                <div id="b6q"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6qq</td>
+            <td>
+                <div id="b6qq"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6r</td>
+            <td>
+                <div id="b6r"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6rr</td>
+            <td>
+                <div id="b6rr"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6s</td>
+            <td>
+                <div id="b6s"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6ss</td>
+            <td>
+                <div id="b6ss"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6t</td>
+            <td>
+                <div id="b6t"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6tt</td>
+            <td>
+                <div id="b6tt"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6u</td>
+            <td>
+                <div id="b6u"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6uu</td>
+            <td>
+                <div id="b6uu"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6v</td>
+            <td>
+                <div id="b6v"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6vv</td>
+            <td>
+                <div id="b6vv"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6w</td>
+            <td>
+                <div id="b6w"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6ww</td>
+            <td>
+                <div id="b6ww"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6x</td>
+            <td>
+                <div id="b6x"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6xx</td>
+            <td>
+                <div id="b6xx"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6y</td>
+            <td>
+                <div id="b6y"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6y</td>
+            <td>
+                <div id="b6yy"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6z</td>
+            <td>
+                <div id="b6z"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>6zz</td>
+            <td>
+                <div id="b6zz"></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 400)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var bey;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/beyonce.json", function(json) {
+          bey = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(bey).length; i++){
+                  parse(Object.keys(bey)[i], bey);
+                }
+      });
+
+    </script>
+<div>

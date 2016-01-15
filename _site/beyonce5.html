@@ -70,49 +70,66 @@
 <table>
   <thead>
     <tr>
-      <th>Number of Colors</th>
       <th>Name</th>
       <th>Colors</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>5</td>
       <td>5a</td>
-      <td><img src="images/beyonce/5/5a.png" alt="" /></td>
+      <td><div id="b5a"></div></td>
     </tr>
     <tr>
-      <td>5</td>
       <td>5b</td>
-      <td><img src="images/beyonce/5/5b.png" alt="" /></td>
+      <td><div id="b5b"></div></td>
     </tr>
     <tr>
-      <td>5</td>
       <td>5c</td>
-      <td><img src="images/beyonce/5/5c.png" alt="" /></td>
+      <td><div id="b5c"></div></td>
     </tr>
-    <tr>
-      <td>5</td>
+     <tr>
       <td>5d</td>
-      <td><img src="images/beyonce/5/5d.png" alt="" /></td>
+      <td><div id="b5d"></div></td>
     </tr>
-    <tr>
-      <td>5</td>
+     <tr>
       <td>5e</td>
-      <td><img src="images/beyonce/5/5e.png" alt="" /></td>
+      <td><div id="b5e"></div></td>
     </tr>
     <tr>
-      <td>5</td>
       <td>5f</td>
-      <td><img src="images/beyonce/5/5f.png" alt="" /></td>
+      <td><div id="b5f"></div></td>
     </tr>
-    <tr>
-      <td>5</td>
+     <tr>
       <td>5g</td>
-      <td><img src="images/beyonce/5/5g.png" alt="" /></td>
+      <td><div id="b5g"></div></td>
     </tr>
   </tbody>
 </table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 400)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var bey;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/beyonce.json", function(json) {
+          bey = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(bey).length; i++){
+                  parse(Object.keys(bey)[i], bey);
+                }
+      });
+
+    </script>
+<div>
+</div></div>
 
       </section>
       <footer>

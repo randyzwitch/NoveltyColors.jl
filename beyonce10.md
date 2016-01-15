@@ -9,8 +9,49 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
 
 [Palette](https://gist.github.com/dill/fb75131e618c52564fc9) copied from [beyonce R package](https://github.com/dill/beyonce) by DL Miller, based on the collection shown at [http://beyoncepalettes.tumblr.com/](http://beyoncepalettes.tumblr.com/). The Beyonce palettes are labeled based on number of colors in the palette, then sorted lexographically, a deviation from the ordering in the R package.
 
-|Number of Colors | Name  | Colors|
-|---|---|---|
-|10|10a|![](images/beyonce/10/10a.png)|
-|10|10b|![](images/beyonce/10/10b.png)|
-|10|10c|![](images/beyonce/10/10c.png)|
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Colors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10a</td>
+      <td><div id="b10a"></div></td>
+    </tr>
+    <tr>
+      <td>10b</td>
+      <td><div id="b10b"></div></td>
+    </tr>
+        <tr>
+      <td>10c</td>
+      <td><div id="b10c"></div></td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 450)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var bey;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/beyonce.json", function(json) {
+          bey = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(bey).length; i++){
+                  parse(Object.keys(bey)[i], bey);
+                }
+      });
+
+    </script>
+</div>

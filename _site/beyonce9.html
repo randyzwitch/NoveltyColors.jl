@@ -70,29 +70,49 @@
 <table>
   <thead>
     <tr>
-      <th>Number of Colors</th>
       <th>Name</th>
       <th>Colors</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>9</td>
       <td>9a</td>
-      <td><img src="images/beyonce/9/9a.png" alt="" /></td>
+      <td><div id="b9a"></div></td>
     </tr>
     <tr>
-      <td>9</td>
       <td>9b</td>
-      <td><img src="images/beyonce/9/9b.png" alt="" /></td>
+      <td><div id="b9b"></div></td>
     </tr>
-    <tr>
-      <td>9</td>
+        <tr>
       <td>9c</td>
-      <td><img src="images/beyonce/9/9c.png" alt="" /></td>
+      <td><div id="b9c"></div></td>
     </tr>
   </tbody>
 </table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 400)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var bey;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/beyonce.json", function(json) {
+          bey = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(bey).length; i++){
+                  parse(Object.keys(bey)[i], bey);
+                }
+      });
+
+    </script>
+</div>
 
       </section>
       <footer>

@@ -70,39 +70,57 @@
 <table>
   <thead>
     <tr>
-      <th>Number of Colors</th>
       <th>Name</th>
       <th>Colors</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>14</td>
       <td>14a</td>
-      <td><img src="images/beyonce/14/14a.png" alt="" /></td>
+      <td><div id="b14a"></div></td>
     </tr>
-    <tr>
-      <td>14</td>
+        <tr>
       <td>14b</td>
-      <td><img src="images/beyonce/14/14b.png" alt="" /></td>
+      <td><div id="b14b"></div></td>
     </tr>
-    <tr>
-      <td>14</td>
+        <tr>
       <td>14c</td>
-      <td><img src="images/beyonce/14/14c.png" alt="" /></td>
+      <td><div id="b14c"></div></td>
     </tr>
-    <tr>
-      <td>14</td>
+        <tr>
       <td>14d</td>
-      <td><img src="images/beyonce/14/14d.png" alt="" /></td>
+      <td><div id="b14d"></div></td>
     </tr>
-    <tr>
-      <td>14</td>
+        <tr>
       <td>14e</td>
-      <td><img src="images/beyonce/14/14e.png" alt="" /></td>
+      <td><div id="b14e"></div></td>
     </tr>
   </tbody>
 </table>
+
+<div>
+      <script type="text/javascript">
+
+      // parse a spec and create a visualization view
+      function parse(divid, palette) {
+
+        spec = colorchip(palette[divid], 50, 600)
+        vg.parse.spec(spec, function(chart) { chart({el:"#" + divid}).update(); });
+      }
+
+      var bey;
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/beyonce.json", function(json) {
+          bey = json;
+      })
+      .done(function(json) {
+
+                for(var i = 0; i < Object.keys(bey).length; i++){
+                  parse(Object.keys(bey)[i], bey);
+                }
+      });
+
+    </script>
+</div>
 
       </section>
       <footer>
