@@ -232,7 +232,7 @@ Palettes derived from linked blog post ["50 Beautiful Color Combinations"](http:
       }
 
       var visme;
-      $.getJSON("/javascripts/visme.json", function(json) {
+      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/visme.json", function(json) {
           visme = json;
       })
       .done(function(json) {
