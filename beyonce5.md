@@ -59,7 +59,7 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
       }
 
       var bey;
-      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/beyonce.json", function(json) {
+      $.getJSON("/javascripts/beyonce.json", function(json) {
           bey = json;
       })
       .done(function(json) {
