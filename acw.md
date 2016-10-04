@@ -127,7 +127,7 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
       }
 
       var acw;
-      $.getJSON("http://randyzwitch.github.io/NoveltyColors.jl/javascripts/acw.json", function(json) {
+      $.getJSON("/NoveltyColors.jl/javascripts/acw.json", function(json) {
           acw = json;
       })
       .done(function(json) {
