@@ -7,7 +7,7 @@ title: Vega.jl - A Julia package for generating visualizations using Vega
 
 # Michiyo
 
-[Palettes](http://goboiano.com/news/5251-ghibli%2527s-legendary-color-designer-michiyo-yasuda-passes-away-at-77) derived in tribute to Michiyo Yasuda, the iconic color designer for Studio Ghibli's. Colors were chosen using [ColorCube](https://github.com/pixelogik/ColorCube) applied to selected video stills and don't represent any "official" published color scheme.
+[Palettes](http://goboiano.com/news/5251-ghibli%2527s-legendary-color-designer-michiyo-yasuda-passes-away-at-77) derived in tribute to Michiyo Yasuda, the iconic color designer for Studio Ghibli. Colors were chosen using [ColorCube](https://github.com/pixelogik/ColorCube) applied to selected video stills and don't represent any "official" published color scheme.
 
 <table>
   <thead>
