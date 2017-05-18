@@ -1,6 +1,10 @@
 # NoveltyColors
 
-[![Build Status](https://travis-ci.org/randyzwitch/NoveltyColors.jl.svg?branch=master)](https://travis-ci.org/randyzwitch/NoveltyColors.jl)
+Linux/OSX: [![Build Status](https://travis-ci.org/randyzwitch/NoveltyColors.jl.svg?branch=master)](https://travis-ci.org/randyzwitch/NoveltyColors.jl)
+
+Windows: [![Build status](https://ci.appveyor.com/api/projects/status/0u9o2yl5bdadv0yl?svg=true)](https://ci.appveyor.com/project/randyzwitch/noveltycolors-jl)
+
+
 
 This package is intended to be a lightweight package for non-standard color palettes. Unlike [Color.jl](https://github.com/JuliaLang/Color.jl), there is not (necessarily) any theoretical underpinnings to these palettes. Color palettes provided within this package may represent Internet memes, generalized color palettes seen in advertising or on television/movies, or just aesthetically pleasing colors.
 
