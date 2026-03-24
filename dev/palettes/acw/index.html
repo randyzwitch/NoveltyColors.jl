@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Adobe Color Wheel · NoveltyColors.jl</title><meta name="title" content="Adobe Color Wheel · NoveltyColors.jl"/><meta property="og:title" content="Adobe Color Wheel · NoveltyColors.jl"/><meta property="twitter:title" content="Adobe Color Wheel · NoveltyColors.jl"/><meta name="description" content="Documentation for NoveltyColors.jl."/><meta property="og:description" content="Documentation for NoveltyColors.jl."/><meta property="twitter:description" content="Documentation for NoveltyColors.jl."/><script data-outdated-warner src="../../assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="../.."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../../assets/documenter.js"></script><script src="../../search_index.js"></script><script src="../../siteinfo.js"></script><script src="../../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-mocha.css" data-theme-name="catppuccin-mocha"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-macchiato.css" data-theme-name="catppuccin-macchiato"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-frappe.css" data-theme-name="catppuccin-frappe"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-latte.css" data-theme-name="catppuccin-latte"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href="../../">NoveltyColors.jl</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li><a class="tocitem" href="../../">Home</a></li><li><a class="tocitem" href="../../getting_started/">Getting Started</a></li><li><span class="tocitem">Palettes</span><ul><li class="is-active"><a class="tocitem" href>Adobe Color Wheel</a><ul class="internal"><li><a class="tocitem" href="#1944Mustang"><span>1944Mustang</span></a></li><li><a class="tocitem" href="#AspirinC"><span>AspirinC</span></a></li><li><a class="tocitem" href="#CS04"><span>CS04</span></a></li><li><a class="tocitem" href="#CherryCheesecake"><span>CherryCheesecake</span></a></li><li><a class="tocitem" href="#CircusIII"><span>CircusIII</span></a></li><li><a class="tocitem" href="#DustyPetrol"><span>DustyPetrol</span></a></li><li><a class="tocitem" href="#Firenze"><span>Firenze</span></a></li><li><a class="tocitem" href="#FlatUI"><span>FlatUI</span></a></li><li><a class="tocitem" href="#FriendsAndFoes"><span>FriendsAndFoes</span></a></li><li><a class="tocitem" href="#GrannySmithApple"><span>GrannySmithApple</span></a></li><li><a class="tocitem" href="#HoneyPot"><span>HoneyPot</span></a></li><li><a class="tocitem" href="#JapaneseGarden"><span>JapaneseGarden</span></a></li><li><a class="tocitem" href="#NeutralBlue"><span>NeutralBlue</span></a></li><li><a class="tocitem" href="#OceanSunset"><span>OceanSunset</span></a></li><li><a class="tocitem" href="#OrangeOnGray"><span>OrangeOnGray</span></a></li><li><a class="tocitem" href="#PearLemonFizz"><span>PearLemonFizz</span></a></li><li><a class="tocitem" href="#Phaedra"><span>Phaedra</span></a></li><li><a class="tocitem" href="#SandyStoneBeach"><span>SandyStoneBeach</span></a></li><li><a class="tocitem" href="#SeaWolf"><span>SeaWolf</span></a></li><li><a class="tocitem" href="#TechOffice"><span>TechOffice</span></a></li><li><a class="tocitem" href="#TimesChanging"><span>TimesChanging</span></a></li><li><a class="tocitem" href="#VintageRL"><span>VintageRL</span></a></li><li><a class="tocitem" href="#VitaminC"><span>VitaminC</span></a></li><li><a class="tocitem" href="#Watermelon"><span>Watermelon</span></a></li><li><a class="tocitem" href="#ZenAndTea"><span>ZenAndTea</span></a></li></ul></li><li><a class="tocitem" href="../beyonce/">Beyoncé</a></li><li><a class="tocitem" href="../michiyo/">Michiyo</a></li><li><a class="tocitem" href="../visme/">Visme</a></li><li><a class="tocitem" href="../wesanderson/">Wes Anderson</a></li></ul></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li><a class="is-disabled">Palettes</a></li><li class="is-active"><a href>Adobe Color Wheel</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Adobe Color Wheel</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/randyzwitch/NoveltyColors.jl" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/randyzwitch/NoveltyColors.jl/blob/master/docs/src/palettes/acw.md" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="Adobe-Color-Wheel"><a class="docs-heading-anchor" href="#Adobe-Color-Wheel">Adobe Color Wheel</a><a id="Adobe-Color-Wheel-1"></a><a class="docs-heading-anchor-permalink" href="#Adobe-Color-Wheel" title="Permalink"></a></h1><h2 id="1944Mustang"><a class="docs-heading-anchor" href="#1944Mustang">1944Mustang</a><a id="1944Mustang-1"></a><a class="docs-heading-anchor-permalink" href="#1944Mustang" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#000000;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#000000</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#263248;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#263248</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#7E8AA2;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#7E8AA2</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFFFFF;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFFFFF</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FF9800;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FF9800</code>
+  </div>
+</div><h2 id="AspirinC"><a class="docs-heading-anchor" href="#AspirinC">AspirinC</a><a id="AspirinC-1"></a><a class="docs-heading-anchor-permalink" href="#AspirinC" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#225378;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#225378</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#1695A3;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#1695A3</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#ACF0F2;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#ACF0F2</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F3FFE2;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F3FFE2</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#EB7F00;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#EB7F00</code>
+  </div>
+</div><h2 id="CS04"><a class="docs-heading-anchor" href="#CS04">CS04</a><a id="CS04-1"></a><a class="docs-heading-anchor-permalink" href="#CS04" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F6F792;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F6F792</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#333745;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#333745</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#77C4D3;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#77C4D3</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#DAEDE2;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#DAEDE2</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#EA2E49;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#EA2E49</code>
+  </div>
+</div><h2 id="CherryCheesecake"><a class="docs-heading-anchor" href="#CherryCheesecake">CherryCheesecake</a><a id="CherryCheesecake-1"></a><a class="docs-heading-anchor-permalink" href="#CherryCheesecake" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#B9121B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#B9121B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#4C1B1B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#4C1B1B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F6E497;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F6E497</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FCFAE1;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FCFAE1</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#BD8D46;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#BD8D46</code>
+  </div>
+</div><h2 id="CircusIII"><a class="docs-heading-anchor" href="#CircusIII">CircusIII</a><a id="CircusIII-1"></a><a class="docs-heading-anchor-permalink" href="#CircusIII" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#2E0927;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#2E0927</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#D90000;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#D90000</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FF2D00;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FF2D00</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FF8C00;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FF8C00</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#04756F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#04756F</code>
+  </div>
+</div><h2 id="DustyPetrol"><a class="docs-heading-anchor" href="#DustyPetrol">DustyPetrol</a><a id="DustyPetrol-1"></a><a class="docs-heading-anchor-permalink" href="#DustyPetrol" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#292929;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#292929</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#5B7876;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#5B7876</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#8F9E8B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#8F9E8B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F2E6B6;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F2E6B6</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#412A22;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#412A22</code>
+  </div>
+</div><h2 id="Firenze"><a class="docs-heading-anchor" href="#Firenze">Firenze</a><a id="Firenze-1"></a><a class="docs-heading-anchor-permalink" href="#Firenze" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#468966;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#468966</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFF0A5;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFF0A5</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFB03B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFB03B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#B64926;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#B64926</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#8E2800;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#8E2800</code>
+  </div>
+</div><h2 id="FlatUI"><a class="docs-heading-anchor" href="#FlatUI">FlatUI</a><a id="FlatUI-1"></a><a class="docs-heading-anchor-permalink" href="#FlatUI" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#2C3E50;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#2C3E50</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#E74C3C;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#E74C3C</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#ECF0F1;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#ECF0F1</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#3498DB;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#3498DB</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#2980B9;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#2980B9</code>
+  </div>
+</div><h2 id="FriendsAndFoes"><a class="docs-heading-anchor" href="#FriendsAndFoes">FriendsAndFoes</a><a id="FriendsAndFoes-1"></a><a class="docs-heading-anchor-permalink" href="#FriendsAndFoes" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#2F2933;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#2F2933</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#01A2A6;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#01A2A6</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#29D9C2;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#29D9C2</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#BDF271;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#BDF271</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFFFA6;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFFFA6</code>
+  </div>
+</div><h2 id="GrannySmithApple"><a class="docs-heading-anchor" href="#GrannySmithApple">GrannySmithApple</a><a id="GrannySmithApple-1"></a><a class="docs-heading-anchor-permalink" href="#GrannySmithApple" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#85DB18;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#85DB18</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#CDE855;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#CDE855</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F5F6D4;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F5F6D4</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#A7C520;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#A7C520</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#493F0B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#493F0B</code>
+  </div>
+</div><h2 id="HoneyPot"><a class="docs-heading-anchor" href="#HoneyPot">HoneyPot</a><a id="HoneyPot-1"></a><a class="docs-heading-anchor-permalink" href="#HoneyPot" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#105B63;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#105B63</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFFAD5;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFFAD5</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFD34E;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFD34E</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#DB9E36;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#DB9E36</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#BD4932;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#BD4932</code>
+  </div>
+</div><h2 id="JapaneseGarden"><a class="docs-heading-anchor" href="#JapaneseGarden">JapaneseGarden</a><a id="JapaneseGarden-1"></a><a class="docs-heading-anchor-permalink" href="#JapaneseGarden" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#D8CAA8;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#D8CAA8</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#5C832F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#5C832F</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#284907;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#284907</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#382513;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#382513</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#363942;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#363942</code>
+  </div>
+</div><h2 id="NeutralBlue"><a class="docs-heading-anchor" href="#NeutralBlue">NeutralBlue</a><a id="NeutralBlue-1"></a><a class="docs-heading-anchor-permalink" href="#NeutralBlue" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FCFFF5;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FCFFF5</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#D1DBBD;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#D1DBBD</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#91AA9D;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#91AA9D</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#3E606F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#3E606F</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#193441;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#193441</code>
+  </div>
+</div><h2 id="OceanSunset"><a class="docs-heading-anchor" href="#OceanSunset">OceanSunset</a><a id="OceanSunset-1"></a><a class="docs-heading-anchor-permalink" href="#OceanSunset" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#405952;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#405952</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9C9B7A;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9C9B7A</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFD393;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFD393</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FF974F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FF974F</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F54F29;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F54F29</code>
+  </div>
+</div><h2 id="OrangeOnGray"><a class="docs-heading-anchor" href="#OrangeOnGray">OrangeOnGray</a><a id="OrangeOnGray-1"></a><a class="docs-heading-anchor-permalink" href="#OrangeOnGray" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFF8E3;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFF8E3</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#CCCC9F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#CCCC9F</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#33332D;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#33332D</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9FB4CC;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9FB4CC</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#DB4105;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#DB4105</code>
+  </div>
+</div><h2 id="PearLemonFizz"><a class="docs-heading-anchor" href="#PearLemonFizz">PearLemonFizz</a><a id="PearLemonFizz-1"></a><a class="docs-heading-anchor-permalink" href="#PearLemonFizz" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#04BFBF;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#04BFBF</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#CAFCD8;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#CAFCD8</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F7E967;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F7E967</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#A9CF54;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#A9CF54</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#588F27;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#588F27</code>
+  </div>
+</div><h2 id="Phaedra"><a class="docs-heading-anchor" href="#Phaedra">Phaedra</a><a id="Phaedra-1"></a><a class="docs-heading-anchor-permalink" href="#Phaedra" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FF6138;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FF6138</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFFF9D;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFFF9D</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#BEEB9F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#BEEB9F</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#79BD8F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#79BD8F</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#00A388;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#00A388</code>
+  </div>
+</div><h2 id="SandyStoneBeach"><a class="docs-heading-anchor" href="#SandyStoneBeach">SandyStoneBeach</a><a id="SandyStoneBeach-1"></a><a class="docs-heading-anchor-permalink" href="#SandyStoneBeach" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#E6E2AF;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#E6E2AF</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#A7A37E;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#A7A37E</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#EFECCA;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#EFECCA</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#046380;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#046380</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#002F2F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#002F2F</code>
+  </div>
+</div><h2 id="SeaWolf"><a class="docs-heading-anchor" href="#SeaWolf">SeaWolf</a><a id="SeaWolf-1"></a><a class="docs-heading-anchor-permalink" href="#SeaWolf" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#DC3522;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#DC3522</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#D9CB9E;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#D9CB9E</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#374140;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#374140</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#2A2C2B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#2A2C2B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#1E1E20;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#1E1E20</code>
+  </div>
+</div><h2 id="TechOffice"><a class="docs-heading-anchor" href="#TechOffice">TechOffice</a><a id="TechOffice-1"></a><a class="docs-heading-anchor-permalink" href="#TechOffice" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#595241;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#595241</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#B8AE9C;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#B8AE9C</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFFFFF;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFFFFF</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#ACCFCC;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#ACCFCC</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#8A0917;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#8A0917</code>
+  </div>
+</div><h2 id="TimesChanging"><a class="docs-heading-anchor" href="#TimesChanging">TimesChanging</a><a id="TimesChanging-1"></a><a class="docs-heading-anchor-permalink" href="#TimesChanging" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#332532;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#332532</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#644D52;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#644D52</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F77A52;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F77A52</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FF974F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FF974F</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#A49A87;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#A49A87</code>
+  </div>
+</div><h2 id="VintageRL"><a class="docs-heading-anchor" href="#VintageRL">VintageRL</a><a id="VintageRL-1"></a><a class="docs-heading-anchor-permalink" href="#VintageRL" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#703030;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#703030</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#2F343B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#2F343B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#7E827A;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#7E827A</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#E3CDA4;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#E3CDA4</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#C77966;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#C77966</code>
+  </div>
+</div><h2 id="VitaminC"><a class="docs-heading-anchor" href="#VitaminC">VitaminC</a><a id="VitaminC-1"></a><a class="docs-heading-anchor-permalink" href="#VitaminC" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#004358;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#004358</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#1F8A70;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#1F8A70</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#BEDB39;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#BEDB39</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFE11A;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFE11A</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FD7400;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FD7400</code>
+  </div>
+</div><h2 id="Watermelon"><a class="docs-heading-anchor" href="#Watermelon">Watermelon</a><a id="Watermelon-1"></a><a class="docs-heading-anchor-permalink" href="#Watermelon" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#7D8A2E;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#7D8A2E</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#C9D787;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#C9D787</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFFFFF;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFFFFF</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FFC0A9;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FFC0A9</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#FF8598;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#FF8598</code>
+  </div>
+</div><h2 id="ZenAndTea"><a class="docs-heading-anchor" href="#ZenAndTea">ZenAndTea</a><a id="ZenAndTea-1"></a><a class="docs-heading-anchor-permalink" href="#ZenAndTea" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#10222B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#10222B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#95AB63;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#95AB63</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#BDD684;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#BDD684</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#E2F0D6;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#E2F0D6</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F6FFE0;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F6FFE0</code>
+  </div>
+</div></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../../getting_started/">« Getting Started</a><a class="docs-footer-nextpage" href="../beyonce/">Beyoncé »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.17.0 on <span class="colophon-date" title="Tuesday 24 March 2026 22:26">Tuesday 24 March 2026</span>. Using Julia version 1.12.5.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>

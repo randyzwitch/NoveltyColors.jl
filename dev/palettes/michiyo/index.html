@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Michiyo · NoveltyColors.jl</title><meta name="title" content="Michiyo · NoveltyColors.jl"/><meta property="og:title" content="Michiyo · NoveltyColors.jl"/><meta property="twitter:title" content="Michiyo · NoveltyColors.jl"/><meta name="description" content="Documentation for NoveltyColors.jl."/><meta property="og:description" content="Documentation for NoveltyColors.jl."/><meta property="twitter:description" content="Documentation for NoveltyColors.jl."/><script data-outdated-warner src="../../assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="../.."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../../assets/documenter.js"></script><script src="../../search_index.js"></script><script src="../../siteinfo.js"></script><script src="../../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-mocha.css" data-theme-name="catppuccin-mocha"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-macchiato.css" data-theme-name="catppuccin-macchiato"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-frappe.css" data-theme-name="catppuccin-frappe"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-latte.css" data-theme-name="catppuccin-latte"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href="../../">NoveltyColors.jl</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li><a class="tocitem" href="../../">Home</a></li><li><a class="tocitem" href="../../getting_started/">Getting Started</a></li><li><span class="tocitem">Palettes</span><ul><li><a class="tocitem" href="../acw/">Adobe Color Wheel</a></li><li><a class="tocitem" href="../beyonce/">Beyoncé</a></li><li class="is-active"><a class="tocitem" href>Michiyo</a><ul class="internal"><li><a class="tocitem" href="#Mononoke1"><span>Mononoke1</span></a></li><li><a class="tocitem" href="#Mononoke2"><span>Mononoke2</span></a></li><li><a class="tocitem" href="#Mononoke3"><span>Mononoke3</span></a></li><li><a class="tocitem" href="#Nausicaa1"><span>Nausicaa1</span></a></li><li><a class="tocitem" href="#Nausicaa2"><span>Nausicaa2</span></a></li><li><a class="tocitem" href="#Nausicaa3"><span>Nausicaa3</span></a></li><li><a class="tocitem" href="#Totoro1"><span>Totoro1</span></a></li><li><a class="tocitem" href="#Totoro2"><span>Totoro2</span></a></li><li><a class="tocitem" href="#Totoro3"><span>Totoro3</span></a></li><li><a class="tocitem" href="#WindRise1"><span>WindRise1</span></a></li><li><a class="tocitem" href="#WindRise2"><span>WindRise2</span></a></li><li><a class="tocitem" href="#WindRise3"><span>WindRise3</span></a></li></ul></li><li><a class="tocitem" href="../visme/">Visme</a></li><li><a class="tocitem" href="../wesanderson/">Wes Anderson</a></li></ul></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li><a class="is-disabled">Palettes</a></li><li class="is-active"><a href>Michiyo</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Michiyo</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/randyzwitch/NoveltyColors.jl" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/randyzwitch/NoveltyColors.jl/blob/master/docs/src/palettes/michiyo.md" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="Michiyo"><a class="docs-heading-anchor" href="#Michiyo">Michiyo</a><a id="Michiyo-1"></a><a class="docs-heading-anchor-permalink" href="#Michiyo" title="Permalink"></a></h1><h2 id="Mononoke1"><a class="docs-heading-anchor" href="#Mononoke1">Mononoke1</a><a id="Mononoke1-1"></a><a class="docs-heading-anchor-permalink" href="#Mononoke1" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9D9789;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9D9789</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9A9D39;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9A9D39</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#995E78;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#995E78</code>
+  </div>
+</div><h2 id="Mononoke2"><a class="docs-heading-anchor" href="#Mononoke2">Mononoke2</a><a id="Mononoke2-1"></a><a class="docs-heading-anchor-permalink" href="#Mononoke2" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#A38F86;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#A38F86</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#D7B47F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#D7B47F</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9B4240;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9B4240</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#D78D15;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#D78D15</code>
+  </div>
+</div><h2 id="Mononoke3"><a class="docs-heading-anchor" href="#Mononoke3">Mononoke3</a><a id="Mononoke3-1"></a><a class="docs-heading-anchor-permalink" href="#Mononoke3" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#7E9E6E;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#7E9E6E</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9ABC98;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9ABC98</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#689940;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#689940</code>
+  </div>
+</div><h2 id="Nausicaa1"><a class="docs-heading-anchor" href="#Nausicaa1">Nausicaa1</a><a id="Nausicaa1-1"></a><a class="docs-heading-anchor-permalink" href="#Nausicaa1" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#AA8442;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#AA8442</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9C9281;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9C9281</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#C3BAA3;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#C3BAA3</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#B96A0F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#B96A0F</code>
+  </div>
+</div><h2 id="Nausicaa2"><a class="docs-heading-anchor" href="#Nausicaa2">Nausicaa2</a><a id="Nausicaa2-1"></a><a class="docs-heading-anchor-permalink" href="#Nausicaa2" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#99A19B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#99A19B</code>
+  </div>
+</div><h2 id="Nausicaa3"><a class="docs-heading-anchor" href="#Nausicaa3">Nausicaa3</a><a id="Nausicaa3-1"></a><a class="docs-heading-anchor-permalink" href="#Nausicaa3" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#C29679;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#C29679</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#789C9B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#789C9B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#AB635A;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#AB635A</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#BAB7A4;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#BAB7A4</code>
+  </div>
+</div><h2 id="Totoro1"><a class="docs-heading-anchor" href="#Totoro1">Totoro1</a><a id="Totoro1-1"></a><a class="docs-heading-anchor-permalink" href="#Totoro1" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#92A4A0;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#92A4A0</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#39859A;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#39859A</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#A38877;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#A38877</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9F5C4A;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9F5C4A</code>
+  </div>
+</div><h2 id="Totoro2"><a class="docs-heading-anchor" href="#Totoro2">Totoro2</a><a id="Totoro2-1"></a><a class="docs-heading-anchor-permalink" href="#Totoro2" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#A19279;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#A19279</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#B35C6B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#B35C6B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#B07F43;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#B07F43</code>
+  </div>
+</div><h2 id="Totoro3"><a class="docs-heading-anchor" href="#Totoro3">Totoro3</a><a id="Totoro3-1"></a><a class="docs-heading-anchor-permalink" href="#Totoro3" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#ADA388;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#ADA388</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#BC6879;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#BC6879</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#998146;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#998146</code>
+  </div>
+</div><h2 id="WindRise1"><a class="docs-heading-anchor" href="#WindRise1">WindRise1</a><a id="WindRise1-1"></a><a class="docs-heading-anchor-permalink" href="#WindRise1" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#41A2A3;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#41A2A3</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#0091B4;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#0091B4</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#75B597;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#75B597</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#BEC580;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#BEC580</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#99CCBA;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#99CCBA</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#C58158;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#C58158</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9B5C4A;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9B5C4A</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#9BB061;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#9BB061</code>
+  </div>
+</div><h2 id="WindRise2"><a class="docs-heading-anchor" href="#WindRise2">WindRise2</a><a id="WindRise2-1"></a><a class="docs-heading-anchor-permalink" href="#WindRise2" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#C59263;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#C59263</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#4BABCD;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#4BABCD</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#5376A3;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#5376A3</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#A26642;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#A26642</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#F97D6F;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#F97D6F</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#7DBAD7;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#7DBAD7</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#8A90A4;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#8A90A4</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#ECBC75;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#ECBC75</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#997A77;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#997A77</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#C4B29E;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#C4B29E</code>
+  </div>
+</div><h2 id="WindRise3"><a class="docs-heading-anchor" href="#WindRise3">WindRise3</a><a id="WindRise3-1"></a><a class="docs-heading-anchor-permalink" href="#WindRise3" title="Permalink"></a></h2><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5em">
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#4ABAC4;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#4ABAC4</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#8EA599;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#8EA599</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#7FCDC6;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#7FCDC6</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#77A631;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#77A631</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#3A9B87;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#3A9B87</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#88B162;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#88B162</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#B2D46B;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#B2D46B</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#1B9C49;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#1B9C49</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#4DA154;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#4DA154</code>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center">
+    <div style="width:60px;height:40px;background:#A5703C;border:1px solid #ccc;border-radius:4px"></div>
+    <code style="font-size:0.75em">#A5703C</code>
+  </div>
+</div></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../beyonce/">« Beyoncé</a><a class="docs-footer-nextpage" href="../visme/">Visme »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.17.0 on <span class="colophon-date" title="Tuesday 24 March 2026 22:26">Tuesday 24 March 2026</span>. Using Julia version 1.12.5.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
