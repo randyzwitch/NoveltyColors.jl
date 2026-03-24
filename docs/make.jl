@@ -51,6 +51,8 @@ makedocs(
     sitename = "NoveltyColors.jl",
     format = Documenter.HTML(
         prettyurls = get(ENV, "CI", nothing) == "true",
+        size_threshold       = 512 * 1024,
+        size_threshold_warn  = 256 * 1024,
     ),
     pages = [
         "Home"            => "index.md",
