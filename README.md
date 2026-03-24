@@ -1,6 +1,6 @@
 # NoveltyColors
 
-Linux/OSX: [![Build Status](https://travis-ci.org/randyzwitch/NoveltyColors.jl.svg?branch=master)](https://travis-ci.org/randyzwitch/NoveltyColors.jl)
+[![CI](https://github.com/randyzwitch/NoveltyColors.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/randyzwitch/NoveltyColors.jl/actions/workflows/CI.yml)
 
 
 
