@@ -3,7 +3,7 @@ module NoveltyColors
 export ColorDict
 import JSON: parsefile
 
-directory = dirname(@__FILE__) * "/../data/"
+directory = joinpath(@__DIR__, "..", "data")
 
 ColorDict = Dict{AbstractString,Any}()
 for file in readdir(directory)
