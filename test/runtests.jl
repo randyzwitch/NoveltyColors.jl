@@ -37,7 +37,7 @@ using Test
                 @test colors isa Vector
                 @test length(colors) > 0
                 for color in colors
-                    @test occursin(hex_re, color) "Invalid color \"$color\" in $source/$name"
+                    @test occursin(hex_re, color)
                 end
             end
         end

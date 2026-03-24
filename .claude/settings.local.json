@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(node -e \"const fs=require\\(''fs''\\); [''acw'',''wesanderson'',''beyonce'',''michiyo'',''visme''].forEach\\(f => { const d=JSON.parse\\(fs.readFileSync\\(''data/''+f+''.json''\\)\\); console.log\\(f, Object.keys\\(d\\).length\\); }\\)\")"
+    ]
+  }
+}
