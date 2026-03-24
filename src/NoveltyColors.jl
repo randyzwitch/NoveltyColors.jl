@@ -7,8 +7,8 @@ directory = joinpath(@__DIR__, "..", "data")
 
 ColorDict = Dict{AbstractString,Any}()
 for file in readdir(directory)
-    if file[end-4:end] == ".json"
-        merge!(ColorDict, Dict{AbstractString,Any}(file[1:end-5] => (parsefile(joinpath(directory, file)))))
+    if endswith(file, ".json")
+        merge!(ColorDict, Dict{AbstractString,Any}(splitext(file)[1] => (parsefile(joinpath(directory, file)))))
     end
 end
 
